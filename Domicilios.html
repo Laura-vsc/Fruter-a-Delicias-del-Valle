@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Elemento de declaración del documento HTML. El atributo "lang" especifica el idioma principal de la página, en este caso, español. -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Configura la codificación de caracteres del documento a UTF-8, lo que asegura que todos los caracteres se rendericen correctamente. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Asegura que la página se vea correctamente en dispositivos móviles, ajustando el ancho del viewport al ancho de la pantalla. -->
+    <title>Delicias del Valle</title>
+    <!-- Título de la página que aparece en la pestaña del navegador. -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Sección de encabezado de la página, que generalmente contiene el título del sitio y la navegación principal. -->
+        <center><h1 class="subtitulo">Delicias del Valle</h1></center>
+        <!-- Encierra el título principal en un centro, centrando el texto horizontalmente. -->
+        <nav>
+            <!-- Comienza la sección de navegación con una lista de enlaces. -->
+            <ul>
+                <li><a href="/views/Futeria.html">Inicio</a></li>
+                <!-- Enlace a la página diFuteria.he inicio del sitio web. -->
+                <li><h4><a href="/views/Productos.html">Productos</a></li>
+                <!-- Enlace a la página de productos del sitio web. -->
+                <li><a href="/views/Quienes_Somos.html">Quiénes Somos</a> </li>
+                <!-- Enlace a la página de 'Quiénes Somos' del sitio web. -->
+             
+            <li><a href="/views/compras.html">Compras</a></li>
+              
+                <button>
+                <!-- Botón que contiene un enlace con una imagen de un carrito de compras. -->
+                    <a href="/views/Domicilios.html">
+                        <img src="/imagenes/Icono_Carrito.png" alt="Carrito de compras">
+                        <!-- Imagen del carrito de compras con un enlace. El atributo "alt" proporciona texto alternativo si la imagen no se carga. -->
+                    </a>
+                </button>
+            </header>
+
+<body>
+<center>
+    <div>
+    <h1 class="subtitulo">Solicitar Domicilio </h1>
+
+    <form action="procesar_domicilio.php" method="POST" class="form-domicilio">
+        <!-- Nombre -->
+    <h4><label for="nombre" class="labels">Nombre Completo: </label>
+        <input type="text" id="nombre" name="nombre" required></h4>
+        
+        <!-- Dirección -->
+    <h4>Dirección de Entrega:</label>
+        <input type="text" id="direccion" name="direccion" required></h4>
+
+        <!-- Teléfono -->
+    </h4> <label for="telefono">Número de Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required><h4>
+    </div>
+                        <button>enviar</button>
+
+</center>
+  
+
+
+<footer>
+        <!-- Sección de pie de página donde se muestran los derechos de autor. -->
+<center>
+        <p>&copy; 2023 Delicias del Valle. Todos los derechos reservados.</p>
+</center>
+</footer>
+
+    <script src="script.js"></script>
+    <!-- Enlace a un archivo JavaScript externo para agregar funcionalidad a la página. -->
+</body>
+</html>
